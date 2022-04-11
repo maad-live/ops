@@ -30,7 +30,7 @@ module "organization" {
   ]
 
   admins = [
-    "terraform-test-admin",
+  "ibadullaev-inc4"
   ]
 
   # randomly chosen users, sorry for blocking you guys!
