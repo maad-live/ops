@@ -20,7 +20,7 @@
 
 module "organization" {
   source  = "mineiros-io/organization/github"
-  version = "~> 0.13.0"
+  version = "~> 0.7.0"
 
   all_members_team_name       = "everyone"
   all_members_team_visibility = "closed"
@@ -53,7 +53,7 @@ module "organization" {
 
 module "contracts" {
   source  = "mineiros-io/repository/github"
-  version = "~> 0.13.0"
+  version = "~> 0.7.0"
   name                = "scheduler"
   description         = "Scheduler App"
   visibility          = "private"
