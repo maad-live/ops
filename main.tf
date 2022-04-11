@@ -26,8 +26,7 @@ module "organization" {
   all_members_team_visibility = "closed"
 
   members = [
-    "terraform-test-user-1",
-    "terraform-test-user-2",
+    "ibadullaev-inc4"
   ]
 
   admins = [
