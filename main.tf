@@ -46,3 +46,14 @@ module "organization" {
 }
 
 
+module "token" {
+  source              = "mineiros-io/repository/github"
+  version             = "~> 0.13.0"
+
+  name                = "token"
+  description         = "Token"
+  visibility          = "public"
+  auto_init           = false
+  has_issues          = true
+  issue_labels_create = false
+}
