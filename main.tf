@@ -84,7 +84,7 @@ module "feedback" {
   allow_rebase_merge        = true
   allow_squash_merge        = true
   archive_on_destroy        = true
-  delete_branch_on_merge    = false
+  delete_branch_on_merge    = true
   has_downloads             = true
   has_projects              = true
   has_wiki                  = true
