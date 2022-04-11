@@ -25,19 +25,14 @@ module "organization" {
   all_members_team_name       = "everyone"
   all_members_team_visibility = "closed"
 
-  members = [
-    "ibadullaev-inc4"
-  ]
+  members = [ ]
 
   admins = [
     "ibadullaev-inc4"
   ]
 
   # randomly chosen users, sorry for blocking you guys!
-  blocked_users = [
-    "Testuser1",
-    "Testuser2",
-  ]
+  blocked_users = [ ]
 
   projects = [
     {
@@ -51,8 +46,9 @@ module "organization" {
 }
 
 
+
 module "scheduler" {
-    source  = "mineiros-io/repository/github"
+    source              = "mineiros-io/repository/github"
     name                = "scheduler"
     description         = "Scheduler App"
     visibility          = "private"
@@ -63,12 +59,13 @@ module "scheduler" {
 
 
 
-module "api_feedback" {
-    source  = "mineiros-io/repository/github"
-    name                = "api-feedback"
-    description         = "Api Feedback App"
-    visibility          = "private"
-    auto_init           = false
-    has_issues          = true
-    issue_labels_create = false
-}
+# module "api_feedback" {
+#     source              = "mineiros-io/repository/github"
+#     name                = "api-feedback"
+#     description         = "Api Feedback App"
+#     visibility          = "private"
+#     auto_init           = false
+#     has_issues          = true
+#     issue_labels_create = false
+# } 
+
