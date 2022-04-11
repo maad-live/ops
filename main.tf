@@ -18,6 +18,18 @@
 # EXAMPLE PROVIDER CONFIGURATION
 # ---------------------------------------------------------------------------------------------------------------------
 
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "maad-organization"
+
+    workspaces {
+      name = "ops"
+    }
+  }
+}
+
+
 module "organization" {
   source  = "mineiros-io/organization/github"
   version = "~> 0.7.0"
