@@ -20,7 +20,7 @@
 
 module "organization" {
   source  = "mineiros-io/organization/github"
-  version = "~> 0.7.0"
+  version = "~> 0.13.0"
 
   all_members_team_name       = "everyone"
   all_members_team_visibility = "closed"
@@ -30,7 +30,7 @@ module "organization" {
   ]
 
   admins = [
-  "ibadullaev-inc4"
+    "ibadullaev-inc4"
   ]
 
   # randomly chosen users, sorry for blocking you guys!
@@ -48,4 +48,16 @@ module "organization" {
       name = "Test Project without a body"
     }
   ]
+}
+
+
+module "contracts" {
+  source  = "mineiros-io/repository/github"
+  version = "~> 0.13.0"
+  name                = "scheduler"
+  description         = "Scheduler App"
+  visibility          = "private"
+  auto_init           = false
+  has_issues          = true
+  issue_labels_create = false
 }
