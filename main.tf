@@ -57,3 +57,23 @@ module "token" {
   has_issues          = true
   issue_labels_create = false
 }
+
+
+module "feedback" {
+  source                    = "mineiros-io/repository/github"
+  version                   = "~> 0.13.0"
+
+  name                      = "feedback"
+  description               = ""
+  visibility                = "public"
+  auto_init                 = false
+  has_issues                = true
+  issue_labels_create       = false
+  allow_rebase_merge        = true
+  allow_squash_merge        = true
+  archive_on_destroy        = true
+  delete_branch_on_merge    = false
+  has_downloads             = true
+  has_projects              = true
+  has_wiki                  = true
+}
