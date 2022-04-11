@@ -18,16 +18,16 @@
 # EXAMPLE PROVIDER CONFIGURATION
 # ---------------------------------------------------------------------------------------------------------------------
 
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "maad-organization"
+# terraform {
+#   backend "remote" {
+#     hostname = "app.terraform.io"
+#     organization = "maad-organization"
 
-    workspaces {
-      name = "ops"
-    }
-  }
-}
+#     workspaces {
+#       name = "ops"
+#     }
+#   }
+# }
 
 
 module "organization" {
