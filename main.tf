@@ -46,26 +46,3 @@ module "organization" {
 }
 
 
-
-module "scheduler" {
-    source              = "mineiros-io/repository/github"
-    name                = "scheduler"
-    description         = "Scheduler App"
-    visibility          = "private"
-    auto_init           = false
-    has_issues          = true
-    issue_labels_create = false
-}
-
-
-
-# module "api_feedback" {
-#     source              = "mineiros-io/repository/github"
-#     name                = "api-feedback"
-#     description         = "Api Feedback App"
-#     visibility          = "private"
-#     auto_init           = false
-#     has_issues          = true
-#     issue_labels_create = false
-# } 
-
