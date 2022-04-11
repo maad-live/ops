@@ -51,13 +51,13 @@ module "organization" {
 }
 
 
-module "contracts" {
-  source  = "mineiros-io/repository/github"
-  version = "~> 0.7.0"
-  name                = "scheduler"
-  description         = "Scheduler App"
-  visibility          = "private"
-  auto_init           = false
-  has_issues          = true
-  issue_labels_create = false
-}
+# module "contracts" {
+#   source  = "mineiros-io/repository/github"
+#   version = "~> 0.7.0"
+#   name                = "scheduler"
+#   description         = "Scheduler App"
+#   visibility          = "private"
+#   auto_init           = false
+#   has_issues          = true
+#   issue_labels_create = false
+# }
